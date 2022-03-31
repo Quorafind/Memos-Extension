@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+
+  "name": "Obsidian Web",
+  "description": "Connect your browser with your notes in Obsidian",
+  "version": "2.1.1",
+
+  "options_page": "options.html",
+
+  "background": {
+    "service_worker": "js/background.js"
+  },
+
+  "sandbox": {
+    "pages": ["handlebars.html"]
+  },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png",
+    "256": "icon256.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png",
+      "256": "icon256.png"
+    },
+    "default_popup": "popup.html"
+  },
+
+  "optional_permissions": ["tabs"],
+  "permissions": ["storage", "activeTab", "scripting"],
+
+  "host_permissions": ["https://127.0.0.1:27124/*", "http://127.0.0.1:27123/*"]
+}

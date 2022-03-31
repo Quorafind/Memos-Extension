@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(chrome-extension://__MSG_@@extension_id__/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(chrome-extension://__MSG_@@extension_id__/MaterialIcons-Regular.ttf);
+}
+
+body {
+  font-family: "Roboto";
+}
+
+body.options {
+  min-width: 800px;
+}
+
+body.options #root {
+  margin: 20px;
+}
+
+body.popup {
+  width: 600px;
+}
+
+div.option-value {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+div.option-value.api-key {
+  justify-content: left;
+}
+
+div.api-key-valid-icon svg {
+  margin-top: 30%;
+}
+
+div.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+div.modal {
+  margin: 50px 100px;
+  padding: 25px;
+  overflow-y: scroll;
+}
+
+div.options-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+div.options-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+
+div.loading {
+  display: flex;
+  flex-direction: column;
+}
+
+div.loading > p {
+  text-align: center;
+}
+
+div.loading > span {
+  margin: 0 auto;
+}
+
+.paper-option-panel {
+  padding: 5px 20px 20px 20px;
+  margin-top: 10px;
+}
+
+div.mentions {
+  display: flex;
+  flex-direction: column;
+}
+
+div.mentions div.mention-notice {
+  margin-top: 5px;
+}
+
+div.mentions div.mention-notice div.MuiAlert-message {
+  width: 100%;
+}
+
+div.mentions div.mention-notice a {
+  cursor: pointer;
+}
+
+.mention-cta {
+  padding: 0 !important;
+  float: right;
+}
+
+div.protip {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #ede8ed;
+}
+
+div.protip p {
+  margin-bottom: 0px;
+}
+
+.send-to-obsidian {
+  width: 56px;
+  height: 56px;
+}
