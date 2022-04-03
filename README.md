@@ -1,8 +1,10 @@
 # Obsidian Memos Extension
 
-This is an official Chrome extension for Obsidian Memos that lets you send content from the web to your memos in Obsidian.
+This is an official Chrome extension for [Obsidian Memos](https://github.com/Quorafind/Obsidian-Memos) that lets you send content from the web to your memos in Obsidian.
 
 You will just need to install the extension and right click your selection or page and select "Send to Obsidian Memos".
+
+> Thanks to [coddingtonbear](https://github.com/coddingtonbear/obsidian-web) for the original code.
 
 ## Prerequisites
 
