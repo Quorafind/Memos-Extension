@@ -7,13 +7,19 @@ export const MinVersion = "1.3.1";
 export const DefaultContentTemplate =
   '---\npage-title: {{json page.title}}\nurl: {{page.url}}\ndate: "{{date}}"\n---\n{{#if page.selectedText}}\n\n{{quote page.selectedText}}\n{{/if}}';
 export const DefaultUrlTemplate = "/vault/{{filename page.title}}.md";
+export const DefaultSendPageTemplate = "[{{page.title}}]({{page.url}}) #project";
+export const DefaultSendSelectionTemplate = "[{{page.title}}]({{page.url}}) {{selection}} #idea";
 export const DefaultHeaders = {};
 export const DefaultMethod = "put";
+export const DefaultSendHeading = "Journal";
 
 export const DefaultLocalSettings: ExtensionLocalSettings = {
   version: "0.1",
   insecureMode: false,
   apiKey: "",
+  pageTemplate: "",
+  selectionTemplate: "",
+  heading: "Journal",
 };
 
 export const DefaultSyncSettings: ExtensionSyncSettings = {

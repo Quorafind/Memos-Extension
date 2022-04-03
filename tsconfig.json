@@ -4,10 +4,10 @@
         "module": "commonjs",
         "target": "es6",
         "esModuleInterop": true,
-        "sourceMap": false,
+        "sourceMap": true,
         "rootDir": "src",
         "outDir": "dist/js",
-        "noEmitOnError": true,
+        "noEmitOnError": false,
         "jsx": "react",
         "typeRoots": [ "node_modules/@types" ]
     }

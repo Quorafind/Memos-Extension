@@ -12,6 +12,9 @@ export interface ExtensionLocalSettings {
   version: string;
   apiKey: string;
   insecureMode?: boolean;
+  pageTemplate: string;
+  selectionTemplate: string;
+  heading: string;
 }
 
 export interface ExtensionSyncSettings {

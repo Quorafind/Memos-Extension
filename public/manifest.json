@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
 
-  "name": "Obsidian Web",
-  "description": "Connect your browser with your notes in Obsidian",
-  "version": "2.1.1",
+  "name": "Obsidian Memos Extension",
+  "description": "Connect your browser with your memos in Obsidian",
+  "version": "0.1.3",
 
   "options_page": "options.html",
 
@@ -29,11 +29,21 @@
       "128": "icon128.png",
       "256": "icon256.png"
     },
-    "default_popup": "popup.html"
+    "default_popup": "options.html"
   },
 
-  "optional_permissions": ["tabs"],
-  "permissions": ["storage", "activeTab", "scripting"],
+  "commands": {
+    "memos-selection": {
+      "suggested_key": "Ctrl+Shift+X",
+      "description": "Send Selection to Memos"
+    },
+    "memos-page": {
+      "suggested_key": "Ctrl+Shift+Z",
+      "description": "Send Page Url to Memos"
+    }
+  },
+
+  "permissions": ["tabs","contextMenus","storage", "activeTab", "scripting"],
 
   "host_permissions": ["https://127.0.0.1:27124/*", "http://127.0.0.1:27123/*"]
 }
