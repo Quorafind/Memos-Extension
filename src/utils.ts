@@ -1,14 +1,14 @@
 import escapeStringRegexp from "escape-string-regexp";
 
 import {
-  ExtensionSyncSettings,
   ExtensionLocalSettings,
+  ExtensionSyncSettings,
+  SandboxExceptionResponse,
   SandboxRenderRequest,
   SandboxRenderResponse,
-  SandboxExceptionResponse,
   SearchJsonResponseItem,
 } from "./types";
-import { DefaultSyncSettings, DefaultLocalSettings } from "./constants";
+import { DefaultLocalSettings, DefaultSyncSettings } from "./constants";
 
 export async function getSyncSettings(
   sync: chrome.storage.SyncStorageArea
@@ -107,6 +107,17 @@ export async function obsidianRequest(
     requestOptions
   );
 }
+
+export function compileToMemo (
+  content: string,
+): string {
+  const compiledContent = content.replace(/\n/g, "<br>");
+  const d = new Date();
+  const hours = (d.getHours() < 10?'0':'') + d.getHours();
+  const mins = (d.getMinutes() < 10?'0':'') + d.getMinutes();
+  return "- " + d.getHours() + ":" + mins + " " + compiledContent;
+}
+
 
 export function compileTemplate(
   template: string,

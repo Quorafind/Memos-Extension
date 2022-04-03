@@ -338,7 +338,7 @@ const Popup = () => {
           {apiKey.length === 0 && (
             <>
               <MaterialAlert severity="success">
-                Thanks for installing Obsidian Web! Obsidian Web needs some
+                Thanks for installing Obsidian Memos Extension! Obsidian Memos Extension needs some
                 information from you before it can connect to your Obsidian
                 instance.
                 <Button onClick={() => chrome.runtime.openOptionsPage()}>

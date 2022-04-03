@@ -1,7 +1,7 @@
 {
-  "name": "obsidian-web",
-  "version": "2.1.1",
-  "description": "Connect your browser with your notes in Obsidian",
+  "name": "obsidian-memos-extension",
+  "version": "0.0.1",
+  "description": "Connect your browser with your memos in Obsidian",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config webpack/webpack.dev.js --watch",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coddingtonbear/obsidian-web.git"
+    "url": "https://github.com/Quorafind/Memos-Extension.git"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
